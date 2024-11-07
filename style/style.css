@@ -1,0 +1,445 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  padding: 15px 20px;
+  background-color: #111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  color: #1e0570; /* Purple color on hover */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #1e0570; /* Purple color on hover */
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: none;
+  display: block;
+  width: 30px;
+  height: 22px;
+  position: relative;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon div {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background-color: transparent; /* White color for the lines */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Hero Section */
+.hero {
+  background: url('../img/h1.jpg') no-repeat center center/cover;
+  color: #dcdcdc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #dcdcdc;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+  color: #dcdcdc;
+}
+
+.cta-btn {
+  background-color: #1e0570;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background-color: navy;
+}
+
+/* About Section */
+#about {
+  background-color: var(--light-gray);  /* Light gray background */
+  padding: 80px 20px;
+  color: var(--dark-gray);  /* Dark text for readability */
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 30px;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 3rem;
+  color: var(--deep-purple);  /* Deep purple for main heading */
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--dark-gray);
+}
+
+.about-image {
+  flex: 1;
+  max-width: 40%;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for image */
+}
+
+.mission-approach {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.mission, .approach {
+  flex: 1;
+}
+
+.mission h3, .approach h3 {
+  font-size: 2rem;
+  color: var(--vibrant-blue);  /* Blue for subheadings */
+  margin-bottom: 15px;
+}
+
+.mission p, .approach p {
+  font-size: 1rem;
+  color: var(--dark-gray);
+  line-height: 1.6;
+}
+
+.why-choose {
+  background-color: #222;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.why-choose h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.why-choose ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.why-choose ul li {
+  font-size: 1.1rem;
+  color: var(--white);
+  margin-bottom: 15px;
+}
+
+.why-choose ul li strong {
+  color: var(--vibrant-blue);  /* Vibrant blue for important text */
+}
+/* Services Section */
+#services {
+  background-color: #f4f4f4;
+  padding: 80px 20px;
+  color: var(--dark-gray); /* Text color */
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--vibrant-blue); /* Blue color for section title */
+  margin-bottom: 40px;
+}
+
+.service-box {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.service-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow for hover effect */
+}
+
+.service-icon {
+  font-size: 3rem;
+  color: var(--deep-purple); /* Purple icon color */
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+.service-box:hover .service-icon {
+  color: var(--vibrant-blue); /* Change icon color on hover */
+}
+
+.service-box h3 {
+  font-size: 1.8rem;
+  color: var(--deep-purple); /* Purple heading color */
+  margin-bottom: 15px;
+}
+
+.service-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-gray);
+}
+
+/* Portfolio Section */
+.portfolio {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.portfolio .section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 50px 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.testimonial-item {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+/* Contact Section */
+#contact {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.contact .contact-content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact .contact-content input, 
+.contact .contact-content textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact .cta-btn {
+  background-color: #1e0570;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.contact .cta-btn:hover {
+  background-color: navy;
+}
+
+/* Sidebar with Contact Information */
+.contact-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.contact-info ul li strong {
+  color: #1e0570;
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+  background-color: #111;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .navbar-nav {
+    text-align: center;
+}
+.navbar-nav .nav-item {
+    margin: 10px 0;
+}
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+  .service-item {
+      margin-bottom: 20px;
+  }
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 100%;
+    padding-right: 0;
+    text-align: center;
+}
+
+.about-image {
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+.mission-approach {
+    flex-direction: column;
+}
+
+.mission, .approach {
+    max-width: 100%;
+}
+
+.why-choose h3 {
+    font-size: 2rem;
+}
+
+.why-choose ul li {
+    font-size: 1rem;
+}
+.service-box {
+  padding: 20px;
+}
+
+.service-box h3 {
+  font-size: 1.5rem;
+}
+
+.service-box p {
+  font-size: 1rem;
+}
+
+.contact .row {
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .contact-content form {
+  max-width: 100%;
+  width: 100%;
+}
+
+.contact .contact-info {
+  width: 100%;
+  margin-top: 30px;
+}
+}
