@@ -24,7 +24,6 @@ a {
 .navbar-brand {
   font-size: 1.8rem;
   color: #fff;
-  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: color 0.3s ease;
@@ -40,8 +39,8 @@ a {
 
 .navbar-nav .nav-link {
   color: #fff;
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 300;
   letter-spacing: 0.5px;
   transition: color 0.3s ease;
 }
@@ -52,7 +51,7 @@ a {
 }
 
 .navbar-toggler {
-  border: none;
+  border: none !important;
 }
 
 .navbar-toggler-icon {
@@ -418,6 +417,7 @@ footer {
 }
 .service-box {
   padding: 20px;
+  
 }
 
 .service-box h3 {
@@ -441,5 +441,11 @@ footer {
 .contact .contact-info {
   width: 100%;
   margin-top: 30px;
+}
+.b2{
+  margin-top: 30px;
+}
+.b3{
+  margin-top: 60px;
 }
 }
